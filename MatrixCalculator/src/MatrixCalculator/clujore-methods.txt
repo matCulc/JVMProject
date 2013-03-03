@@ -1,0 +1,40 @@
+CURRYING - Using closures to reduce the number of parameters sent to a function is called “Currying”
+MEMOIZE -  returns a function that keeps the results of previous executions of f. (memoize f)
+FSM / TRAMPOLINE -  fsm of checks is-matrix -> check addition.
+QUOTE - no evaluation occurs.
+MACROS - code execution construct.
+CONTRACTS - add to a function pre-cond to check the input and post- cond to check the return value. 
+			(defn f-name [args]
+				{:pre [(assertion1) (assertion2)…]
+				:post [(assertion3) (assertion4)…]}
+HANDELING DATA STRUCTERS - (lecture ex2 slide 17) - walk on each element in the matrix.
+TESTING-
+USING JAVA for the GUI. 
+(def arr-int(make-array Integer/TYPE/ 20 40 )) - create a 2 dim array.
+use ITERATE
+use (time (fn))
+add function that get more than one options of parameters (like repeat)
+
+
+FUNCTIONS:
+~~~~~~~~~~
+(juxt f1 f2 .. arg) - returns a function, that executes each of the given function on its arguments, returns all the results in a vector
+(comp f g  …) - function composition. (f(g(x))) .
+(partial f v) - Send to f a partial list of arguments.
+OP ON SEQ - take / drop / cons / conj / concat / interleave / split / partition / reverse / shuffle / flatten.
+
+;add lazy-list in functions fot the use of LAZYNES.(e.g. func that recieve 2 matrixs and index and return the value
+; of the index after summing this 2 matrixs).
+
+;add FUTURE for the use of PARLLIZEM.(e.g. when calculating Dot product).
+;
+
+
+;using pmap for parallel computation.
+
+QUESTIONS:
+~~~~~~~~~~~~
+1. how do we now which data structure is the best to store matrix.
+2. how to do parlalizem  ? pmap is good. agent 
+3.האם צריך לעשות בדיקות חוקיות על הפלט בג'אבה או בקלוז'ר
+4.
